@@ -65,7 +65,7 @@
     }
 
             #wrapper {
-                margin-top:0;
+                
             }
         }
     </style>
@@ -94,6 +94,11 @@
     
     <link href="http://www.maheshwari.org/css/NewSchema/table.css" rel="stylesheet" />
     <style>
+
+
+    .navbar-default {
+     z-index: 999;
+    }
         .form {
             padding: 0;
             margin:0;
@@ -185,89 +190,124 @@
                 </div>
             </div>
 
-          <nav class="menu">
-                <a class="toggle-nav" href="#"><i class="flaticon-menu51"></i><font type="arial" color="#fff9dd" size="5">&nbsp;&nbsp;&nbsp;&nbsp;Maheshwari.org</font></a>
-                <ul class="active-menu" style = "margin-top:18px;">
+         <nav class = "menu navbar navbar-default navbar-static-top" role = "navigation" style = "background-color : rgb(247, 130, 46); margin-top:20px">
+   
+   <div class = "navbar-header">
+      <button type = "button" class = "navbar-toggle" 
+         data-toggle = "collapse" data-target = "#example-navbar-collapse">
+         <span class = "sr-only">Toggle navigation</span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+      </button>
+        
+      <div class = "navbar-header" style = "width:60px">
+      <a class = "toggle-nav" href = "#"><img src="http://www.maheshwari.org/img/user/newschema/header.png" class = "logo-pic"/> </a>
+   </div>
+   </div>
+   
+   <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+    
+      <ul class = "nav navbar-nav">
+      <li><a href = "http://maheshwari.org/user/main.aspx"><strong>Home</strong></a></li>
+         <li ><a href = "http://maheshwari.org/user/login.aspx"><strong>Login</strong></a></li>
+         <li><a href = "http://maheshwari.org/user/register.aspx"><strong>Register</strong></a></li>
+            
+         <li class = "dropdown" >
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+             <strong>Search</strong>
+               <b class = "caret"></b>
+            </a>
+            
+            <ul class = "dropdown-menu" style = "background-color : rgb(247, 130, 46);">
+               <li><a href="http://maheshwari.org/user/general.aspx">Basic</a></li>
+              <li><a href="http://maheshwari.org/user/advance.aspx">Advanced</a></li>
+              <li><a href="http://maheshwari.org/user/city.aspx">City</a></li>
 
-                    <li><a href="http://maheshwari.org/user/main.aspx">Home <span class="i-sep">&#9662;</span></a></li>
-                    <li class="item"><a href="http://maheshwari.org/user/login.aspx">Login</a></li>
-                    <li><a href="http://maheshwari.org/user/register.aspx">Register <span class="i-sep">&#9662;</span></a></li>
+               <li class = "dropdown">
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+               <strong>Top Searches</strong> 
+               <b class = "caret"></b>
+            </a>
 
-                    <li><a href="#">Search &#9662;</a><br />
-                        <ul class="sub-menu">
-                            <li><a href="http://maheshwari.org/user/general.aspx">Basic</a></li>
-                            <li><a href="http://maheshwari.org/user/advance.aspx">Advanced</a></li>
-                            <li><a href="http://maheshwari.org/user/city.aspx">City</a></li>
-                            <li>
-                                <a href="#">Top Searches &#9656;</a>
-                                <ul class="sub-sub-menu">
-                                    <li><a href="http://maheshwari.org/user/link.aspx?col=manglik&status=yes&u=9">Manglik</a>
-                                    <li><a href="http://maheshwari.org/user/link.aspx?col=marstatus&status=_unmarried&u=0">Divorcee/Widow</a></li>
-                                    <li><a href="http://maheshwari.org/user/link.aspx?col=country&status=_india&u=1">NRI</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Search By Education &#9656;</a>
-                                <ul class="sub-sub-menu">
-                                    <li><a href="http://maheshwari.org/user/link.aspx?col=education&status=d&u=2">Doctors</a></li>
-                                    <li><a href="http://maheshwari.org/user/link.aspx?col=education&status=e&u=3">Engineers</a></li>
-                                    <li><a href="http://maheshwari.org/user/link.aspx?col=education&status=m&u=4">MBA, MCA</a></li>
-                                    <li><a href="http://maheshwari.org/user/link.aspx?col=education&status=p&u=5">CA, CS, ICWA</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Search By Occupation &#9656;</a>
-                                <ul class="sub-sub-menu">
-                                    <li><a href="http://maheshwari.org/user/link.aspx?col=pstatus&status=service&u=6">Service</a></li>
-                                    <li><a href="http://maheshwari.org/user/link.aspx?col=pstatus&status=business&u=8">Business</a></li>
-                                    <li><a href="http://maheshwari.org/user/link.aspx?col=pstatus&status=profession&u=7">Profession</a></li>
-                                </ul>
-                            </li>
-                            <li>
+            <ul class = "dropdown-submenu">
+               <li><a href="http://maheshwari.org/user/link.aspx?col=manglik&status=yes&u=9">&#9656;Manglik</a>
+                <li><a href="http://maheshwari.org/user/link.aspx?col=marstatus&status=_unmarried&u=0">&#9656;Divorcee/Widow</a></li>
+                  <li><a href="http://maheshwari.org/user/link.aspx?col=country&status=_india&u=1">&#9656;NRI</a></li>
+</ul>
+               
+
+
+               <li class = "dropdown">
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+              <strong> Search By Education</strong>
+               <b class = "caret"></b>
+            </a>
+
+            <ul class = "dropdown-submenu">
+               <li><a href="http://maheshwari.org/user/link.aspx?col=education&status=d&u=2">&#9656;Doctors</a></li>
+                <li><a href="http://maheshwari.org/user/link.aspx?col=education&status=e&u=3">&#9656;Engineers</a></li>
+                  <li><a href="http://maheshwari.org/user/link.aspx?col=education&status=m&u=4">&#9656;MBA, MCA</a></li>
+                <li><a href="http://maheshwari.org/user/link.aspx?col=education&status=p&u=5">&#9656;CA, CS, ICWA</a></li>
+</ul>
+
+
+               <li class = "dropdown">
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+              <strong> Search By Occupation </strong>
+               <b class = "caret"></b>
+            </a>
+
+            <ul class = "dropdown-submenu">
+                                 <li><a href="http://maheshwari.org/user/link.aspx?col=pstatus&status=service&u=6">&#9656;Service</a></li>
+                                    <li><a href="http://maheshwari.org/user/link.aspx?col=pstatus&status=business&u=8">&#9656;Business</a></li>
+                                    <li><a href="http://maheshwari.org/user/link.aspx?col=pstatus&status=profession&u=7">&#9656;Profession</a></li>
+</ul>
+
+
+              <li>
                                 <form action="http://maheshwari.org/user/profile.aspx">
                                     <input type="text" name="id" class="search-txt" placeholder="Search By ID" />
-                                    <button>Go</button>
+                                    <button class = "btn btn-primary">Go</button>
                                 </form>
                             </li>
                             <li>
-                                <form action="http://maheshwari.org/user/namesearch.aspx">Find a Member<br>
+                                <form action="http://maheshwari.org/user/namesearch.aspx"><strong>&#9656;Find a Member</strong><br>
                                     <input type="text" name="name" class="search-txt" placeholder="Name" onblur="this.value = this.value.replace(',',''); if(this.value.trim().length == 1) this.value='';"><br>
                                     <input type="text" name="surname" class="search-txt" placeholder="Surname" onblur="this.value = this.value.replace(',',''); if(this.value.trim().length == 1) this.value='';">
-                                    <button>Go</button>
+                                    <button class = "btn btn-primary">Go</button>
                                 </form>
                             </li>
-                        </ul>
-                    </li>
 
-                    <li><a href="http://maheshwari.org/user/payment-options.aspx">Membership <span class="i-sep">&#9662;</span></a></li>
-                    <li>
-                        <a href="#">Help &#9662;</a><br />
-                        <ul class="sub-menu">
-                            <li><a href="http://maheshwari.org/user/contact.aspx">Contact Us</a></li>
-                            <li><a href="http://maheshwari.org/user/feedback.aspx">Feedback</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            </ul>
+           
+         </li>
+
+         <li><a href="http://maheshwari.org/user/payment-options.aspx"><strong>Membership </strong></a></li>
+
+
+          <li class = "dropdown">
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+               <strong>Help</strong>
+               <b class = "caret"></b>
+            </a>
+            
+            <ul class = "dropdown-menu" style = "background-color : rgb(247, 130, 46);">
+               <li><a href="http://maheshwari.org/user/contact.aspx">Contact Us</a></li>
+              <li><a href="http://maheshwari.org/user/feedback.aspx">Feedback</a></li>
+              </ul>
+              </li>
+            
+      </ul>
+   </div>
+   
+</nav>
     </div>
-
-    
-
-
-   
-<br/>
-<br/>
-   
-
-<br/>
-   
-<br/>
-<br/>
-   
-<br/>
+    </div>
 <br/>
 
-    <div class="container" style = "background-color : rgb(255, 249, 221);">
+
+    <div class="container" style = "background-color : rgb(255, 249, 221);" id="wrapper">
       <div class="row">
         <div class="col-xs-11 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 col-xl-6 red">
           <div class="table-box">
@@ -589,6 +629,10 @@ _gaq.push(['_setCustomVar',
     </script>
     <script src="http://www.maheshwari.org/js/newschema/scrolltie.js"></script>
     <script src="http://www.maheshwari.org/js/newschema/menu.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="js/bootstrap.min.js"></script>
+
 
 <!--Start of Tawk.to Script--
 <script type="text/javascript">
