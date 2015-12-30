@@ -17,6 +17,7 @@
     www.maheshwari.org - No. 1 Maheshwari Matrimonial, Matrimony Site
 </title><meta name="DESCRIPTION" content="&lt;%=pgdescription%>" />
 <meta content="&lt;%=pgkeywords%>" name="Keywords" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="language" content="EN" /><meta name="copyright" content="Copyright &lt;%=sitename%>" />
 <meta name="revisit-after" content="15 days" /><meta name="reply-to" content="&lt;%=siteemail%>" />
 <meta name="document-classification" content="Matrimonials Services" />
@@ -30,8 +31,10 @@
 <link href="http://www.maheshwari.org/css/NewSchema/footer.css" rel="stylesheet" />
 <link href="http://www.maheshwari.org/css/NewSchema/page.css" rel="stylesheet" />
 <link href="http://www.maheshwari.org/css/NewSchema/user.css" rel="stylesheet" />
-
- 
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+ <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+ <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
    
  <link href="css/bootstrap.css" rel = "stylesheet" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,6 +49,9 @@
             font-size: 16px !important;
         }
 
+.table-row{
+  font-family: 'Montserrat', sans-serif;
+}
         #wrapper {
             margin-top: 100px;
             display: block;
@@ -164,8 +170,8 @@
 
     </script>
 
-      <div id="head"  style = "background-color : rgb(255, 249, 221);">
-        <div class="menu-wrapper">
+      <div id="head" >
+        <div class="menu-wrapper"  style = "background-color : #B13300;">
             <div class="image-wrapper menu-hide">
                 <a href="http://maheshwari.org/user/main.aspx"><img src="http://www.maheshwari.org/img/user/newschema/guru.gif" id="guru"></a>
                 <a href="http://maheshwari.org/user/main.aspx"><img src="http://www.maheshwari.org/img/user/newschema/yantra.gif" id="yantra"></a>
@@ -181,9 +187,9 @@
                             <input type="hidden" id="fltr" name="fltr"  />
                             <button   class = "btn btn-warning" style = "margin-top : -5px " onclick="loginfunc()">Login</button>
                         </div>
-                        <div class="box-small">
-                            <input type="checkbox" checked name="loggedin" id="loggedin"/><label class="tiny">Keep me logged in</label>
-                            <label class="forgot tiny"><a href="http://maheshwari.org/user/forgotpassword.aspx">Forgot password?</a></label>
+                        <div class="box-small" style="margin-top:-10px">
+                            <input type="checkbox" checked name="loggedin" id="loggedin"/><label class="tiny" style = "color:white;font-family: 'Montserrat', sans-serif;">Keep me logged in</label>
+                            <label class="forgot tiny" style="margin-left:20px"><a href="http://maheshwari.org/user/forgotpassword.aspx">Forgot password?</a></label>
                         </div>
                     </form>
 
@@ -309,56 +315,61 @@
 <br/>
 
 
-    <div class="container" style = "background-color : rgb(255, 249, 221);" id="wrapper">
+     <div class="container" style = "background-color : rgb(255, 249, 221);margin-top:0px; padding-top:0px" id="wrapper">
       <div class="row">
-        <div class="col-xs-11 col-xs-pull-1 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 col-xl-6 red">
+        <div class="col-xs-11 col-xs-pull-1 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 col-xl-6 "  style="padding-top:100px;background-color:73503C">
           <div class="table-box">
-            <div class="table-row panel panel-success " style="text-align: center;">
-                  <div  class = "panel-heading" style="width:100%;font-size:20px;text-decoration:underline;font-weight:bold">
+            <div class="table-row " style="text-align: center;">
+                  <div  style="width:100%;font-size:20px;text-decoration:underline;font-weight:bold;font-family: 'Montserrat', sans-serif;">
                         <a href = "Register.aspx"><strong>Register for free</strong></a>
                    </div>
                    </div>
-                    <br />
+                   <hr/>
+                
  <div class="table-row" style = "margin-right:-190px;">
                     <div class="table-cell" >
-                        <label class="lbl" style= "color:white;font-size:20px">Or Login</label>
+                        <label class="lbl" style= "color:white;font-size:20px;font-family: 'Montserrat', sans-serif;">Or Login</label>
                     </div>
                     </div>
-            <br />
+            
             <div class="table-row">
                 <form onsubmit="return Full(this)" name="frm" action="loged.aspx" method="post" class="login-form">
                     <input name="Matcode" placeholder="Profile Id" style="text-align:left;"><br /><br />
                     <input name="Password" type="password" placeholder="Password" onblur="this.value = this.value.replace(/[<>]/gi,'');" style="text-align:left;"><br>
                 <br />
-                    <div style = "color : white">
-                    <input type="checkbox" name="loggedin" id="loggedin" style="vertical-align: middle ;" title="Keep me logged in" checked />Keep me logeed in.
+                    <div style = "color : white;font-family: 'Montserrat', sans-serif;">
+                    <input type="checkbox" name="loggedin" id="loggedin" style="vertical-align: middle ;" title="Keep me logged in" checked />Keep me logged in.
                     </div>
 
-                    <div style="margin-left: 2px; color: white; font-size: 10px;">(Uncheck if on a shared computer)</div>
-                    <br /> 
-                    <button type="submit" value="Login" name="B1" class = "button btn-primary"> Login </button>
+                    <div style="margin-left: 2px; color: white; font-size: 10px;font-family: 'Montserrat', sans-serif;">(Uncheck if on a shared computer)</div>
+                    <br />
+                    <button type="submit" value="Login" name="B1" class = "btn btn-primary"> Login </button>
                     <br />
 <br/>
-                    <a href="ForgotPassword.aspx" style="color: white">Forgot Password / Profile ID ?</a>
+                    <a href="ForgotPassword.aspx" style="color: white;font-family: 'Montserrat', sans-serif;">Forgot Password / Profile ID ?</a>
                 </form>
             </div>
+            <br/>
         </div>
         </div>
 
-        
-        <div class="col-xs-11  col-sm-4 col-sm-offset-2 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 col-xl-6 red" >
+
+        <div class="col-xs-11  col-sm-4 col-sm-offset-2 col-md-5 col-md-offset-1 col-lg-5  col-xl-6 "  style="padding-top:100px;background-color:73503C">
+
+
           
 
           <div class="table-box" >
               <form method="post" action="searchnew.aspx">
-                <div class="table-row panel panel-success " style="text-align: center;">
-                  <div  class = "panel-heading" style="width:100%;font-size:20px;text-decoration:underline;font-weight:bold">
+                <div class="table-row" style="text-align: center;">
+                  <div style="width:100%;font-size:20px;text-decoration:underline;font-weight:bold;font-family: 'Roboto', sans-serif;color:white;">
                         <strong>General Search</strong>
                     </div>
                 </div>
+                <hr/>
                 <div class="table-row">
                     <div class="table-cell">
-                        <label class="lbl" style= "color:white">Search for</label>
+                        <label class="lbl" style= "color:white;font-family: 'Montserrat', sans-serif;">Search for</label>
                     </div>
                     <div class="table-cell">
                         <select name="gender">
@@ -368,7 +379,7 @@
                     </div>
                 </div>
                 <div class="table-row">
-                    <div class="table-cell" style= "color:white">
+                    <div class="table-cell" style= "color:white;font-family: 'Montserrat', sans-serif;">
                         <label class="lbl"><strong>Age</strong></label>
                     </div>
                     <div class="table-cell">
@@ -467,7 +478,7 @@
                 </div>
                 <br/>
                 <div class="table-row">
-                    <div class="table-cell" style= "color:white">
+                    <div class="table-cell" style= "color:white;font-family: 'Montserrat', sans-serif;">
                         <label class="lbl">Height</label>
                     </div>
                     <div class="table-cell">
@@ -551,7 +562,7 @@
                         <button type="submit" value="Search" name="B1" class = "btn btn-primary"> Search </button>
                         <br />
                         <br/>
-                        <a href="advancenew.aspx" style="color: white">Advance Search...</a>
+                        <a href="advancenew.aspx" style="color: white;font-family: 'Montserrat', sans-serif;">Advance Search...</a>
                     </div>
                 </div>
             </div>
@@ -563,25 +574,27 @@
 
 <br/>
 <br />
-
-    <div id="foot">
-        <div class="footer panel" style = "background-color : rgb(247, 130, 46);">
+<div class = "container">
+<div class = "row">
+<div class = "col-lg-11 col-xl-12 col-xs-pull-1">
+    <div id="foot" >
+        <div class="footer panel" style = "background-color : #591E23">
             <div class="footer-box">
                 <ul class="footer-col">
-                    <li><a href="http://maheshwari.org/user/payment-options.aspx">Membership Options</a></li>
-                    <li><a href="http://maheshwari.org/user/contact.aspx">Contact Us</a></li>
-                    <li><a href="http://maheshwari.org/user/faq.aspx">FAQ</a></li>
+                    <li style = "font-family: 'Slabo 27px', serif;color:white;"><a href="http://maheshwari.org/user/payment-options.aspx">Membership Options</a></li>
+                    <li style = "font-family: 'Slabo 27px', serif;color:white;"><a href="http://maheshwari.org/user/contact.aspx">Contact Us</a></li>
+                    <li style = "font-family: 'Slabo 27px', serif;color:white;"><a href="http://maheshwari.org/user/faq.aspx">FAQ</a></li>
                 </ul>
                 <ul class="footer-col">
-                    <li><a href="http://maheshwari.org/user/feedback.aspx">Share Feedback</a></li>
-                    <li><a href="http://maheshwari.org/user/feedback.aspx?f=misuse">Report Misuse</a></li>
-                    <li><a href="http://maheshwari.org/user/feedback.aspx?f=service">Report Service Issue</a></li>
+                    <li style = "font-family: 'Slabo 27px', serif;color:white;"><a href="http://maheshwari.org/user/feedback.aspx">Share Feedback</a></li>
+                    <li style = "font-family: 'Slabo 27px', serif;color:white;"><a href="http://maheshwari.org/user/feedback.aspx?f=misuse">Report Misuse</a></li>
+                    <li style = "font-family: 'Slabo 27px', serif;color:white;"><a href="http://maheshwari.org/user/feedback.aspx?f=service">Report Service Issue</a></li>
                 </ul>
                 <ul class="footer-col">
 <!--                    <li>SiteMap</li>
                     <li>About Us</li> -->
-                    <li><a href="http://maheshwari.org/user/terms.aspx">Terms Of Use</a></li>
-                    <li><a href="http://maheshwari.org/user/privacy-policy.aspx">Privacy Policy</a></li>
+                    <li style = "font-family: 'Slabo 27px', serif;color:white;"><a href="http://maheshwari.org/user/terms.aspx">Terms Of Use</a></li>
+                    <li style = "font-family: 'Slabo 27px', serif;color:white;"><a href="http://maheshwari.org/user/privacy-policy.aspx">Privacy Policy</a></li>
                 </ul>
                 <ul class="footer-col">
 
@@ -608,6 +621,9 @@
                 </ul>
             </div>
         </div>
+    </div>
+    </div>
+    </div>
     </div>
     <script type="text/javascript">
         var _gaq = _gaq || [];
